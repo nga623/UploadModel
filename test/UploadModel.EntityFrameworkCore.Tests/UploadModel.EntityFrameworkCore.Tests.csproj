@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>UploadModel</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="5.0.*" />
+    <PackageReference Include="Volo.Abp.BlobStoring" Version="4.4.3" />
+    <PackageReference Include="Volo.Abp.BlobStoring.FileSystem" Version="4.4.3" />
+    <ProjectReference Include="..\..\src\UploadModel.EntityFrameworkCore\UploadModel.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\UploadModel.TestBase\UploadModel.TestBase.csproj" />
+    <PackageReference Include="Volo.Abp.EntityFrameworkCore.Sqlite" Version="4.4.3" />
+  </ItemGroup>
+
+</Project>

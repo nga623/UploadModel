@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.prod.json",
+  "compilerOptions": {
+    "paths": {
+      "@upload-model": [
+        "projects/upload-model/src/public-api.ts"
+      ],
+      "@upload-model/config": [
+        "projects/upload-model/config/src/public-api.ts"
+      ],
+      "@proxy": ["projects/upload-model/src/lib/proxy/index.ts"],
+      "@proxy/*": ["projects/upload-model/src/lib/proxy/*"]
+    }
+  }
+}
