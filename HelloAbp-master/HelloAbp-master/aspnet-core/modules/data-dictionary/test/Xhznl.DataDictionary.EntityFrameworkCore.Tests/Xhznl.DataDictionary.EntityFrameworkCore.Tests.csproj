@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp5.0</TargetFramework>
+    <RootNamespace>Xhznl.DataDictionary</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.10.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="5.0.8" />
+    <ProjectReference Include="..\..\src\Xhznl.DataDictionary.EntityFrameworkCore\Xhznl.DataDictionary.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\Xhznl.DataDictionary.TestBase\Xhznl.DataDictionary.TestBase.csproj" />
+    <PackageReference Include="Volo.Abp.EntityFrameworkCore.Sqlite" Version="4.3.3" />
+  </ItemGroup>
+
+</Project>
